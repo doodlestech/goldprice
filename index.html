@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gold & Silver Prices</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styless.css">
 </head>
 <body>
     <header>
@@ -16,11 +16,11 @@
             <table>
                 <tr>
                     <th>Price per gram</th>
-                    <td id="goldPricePerGram">₹--</td>
+                    <td>₹4,500</td>
                 </tr>
                 <tr>
-                    <th>Price for 8 Gram</th>
-                    <td id="goldPriceFor8Gram">₹--</td>
+                    <th>Price per ounce</th>
+                    <td>₹1,25,000</td>
                 </tr>
             </table>
         </div>
@@ -29,32 +29,20 @@
             <table>
                 <tr>
                     <th>Price per gram</th>
-                    <td id="silverPricePerGram">₹--</td>
+                    <td>₹60</td>
                 </tr>
                 <tr>
-                    <th>Price for 8 Gram</th>
-                    <td id="silverPriceFor8Gram">₹--</td>
+                    <th>Price per ounce</th>
+                    <td>₹1,800</td>
                 </tr>
             </table>
         </div>
     </section>
     <section class="update-date">
-        <p>Data updated on: <span id="update-date">--</span></p>
+        <p>Data updated on: <span id="update-date">16th July 2024</span></p>
     </section>
     <footer>
         <p>&copy; 2024 Doodle's Tech</p>
     </footer>
-    <script>
-        fetch('rates.json')
-            .then(response => response.json())
-            .then(data => {
-                document.getElementById('goldPricePerGram').innerText = `₹${data.gold.pricePerGram}`;
-                document.getElementById('goldPriceFor8Gram').innerText = `₹${data.gold.priceFor8Gram}`;
-                document.getElementById('silverPricePerGram').innerText = `₹${data.silver.pricePerGram}`;
-                document.getElementById('silverPriceFor8Gram').innerText = `₹${data.silver.priceFor8Gram}`;
-                document.getElementById('update-date').innerText = data.lastUpdate;
-            })
-            .catch(error => console.error('Error loading rates:', error));
-    </script>
 </body>
 </html>
