@@ -1,11 +1,11 @@
 {
     "gold": {
-        "pricePerGram": 4500,
-        "priceFor8Gram": 125000
+        "pricePerGram": 6550,
+        "priceFor8Gram": 52,400
     },
     "silver": {
-        "pricePerGram": 60,
-        "priceFor8Gram": 1800
+        "pricePerGram": 92,
+        "priceFor8Gram": 736
     },
-    "lastUpdate": "16th July 2024"
+    "lastUpdate": "24th July 2024"
 }
